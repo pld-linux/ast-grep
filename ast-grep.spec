@@ -2,18 +2,18 @@
 
 Summary:	Tool for code structural search, lint and rewriting
 Name:		ast-grep
-Version:	0.42.3
+Version:	0.51.0
 Release:	1
 License:	MIT
 Group:		Applications
 Source0:	https://github.com/ast-grep/ast-grep/archive/%{version}/%{name}-%{version}.tar.gz
-# Source0-md5:	b562e6d9dd1e3ea361baebcb527b8c5c
+# Source0-md5:	afb838ed81928502bdca0099b26ee734
 Source1:	%{name}-crates-%{crates_ver}.tar.xz
-# Source1-md5:	db5e2bbd8f5409be4be4ba994772332e
+# Source1-md5:	3d8889c9afccea91d1c4b04a593c527a
 URL:		https://ast-grep.github.io/
 BuildRequires:	cargo
 BuildRequires:	rpmbuild(macros) >= 2.050
-BuildRequires:	rust >= 1.79
+BuildRequires:	rust >= 1.90.0
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	xz
 %{?rust_req}
